@@ -4,6 +4,7 @@ import SidebarNav from './components/SidebarNav';
 import TopBar from './components/TopBar';
 import SectionContent from './components/SectionContent';
 import Login from './components/Login';
+import AIChat from './components/AIChat';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -23,6 +24,8 @@ function App() {
           <SectionContent active={active} />
         </main>
       </div>
+      {/* Floating AI Chat with animated voice icon */}
+      <AIChat />
     </div>
   );
 }
